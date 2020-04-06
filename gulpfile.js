@@ -1,13 +1,15 @@
-var gulp = require('gulp');
-var bs = require('browser-sync');
-var sass = require('gulp-sass');
-var autoprefixer = require('gulp-autoprefixer');
-var concatCss = require('gulp-concat-css');
-var cleanCss = require('gulp-clean-css');
-var rename = require('gulp-rename');
-var uglifyJs = require('gulp-uglify');
-var htmlmin = require('gulp-htmlmin');
+var gulp          = require('gulp'),
+    bs            = require('browser-sync'),
+    sass          = require('gulp-sass'),
+    autoprefixer  = require('gulp-autoprefixer'),
+    concatCss     = require('gulp-concat-css'),
+    cleanCss      = require('gulp-clean-css'),
+    rename        = require('gulp-rename'),
+    uglifyJs      = require('gulp-uglify'),
+    htmlmin       = require('gulp-htmlmin'),
+    imagemin      = require('gulp-imagemin');
 
+// ----- DEV TASKS -----
 var sassTask = gulp.series(function(cb) {
   console.log(`TASK: sass`);
   
@@ -23,7 +25,7 @@ var sassTask = gulp.series(function(cb) {
   return res;
 });
 
-var serve = gulp.series(function(cb){
+var serve = gulp.series(sassTask, function(cb){
   console.log(`TASK: serve`);
 
   bs.init({
@@ -36,6 +38,7 @@ var serve = gulp.series(function(cb){
   cb();
 });
 
+//----- BUILD TASKS -----
 // minimize css task
 var minCss = function(cb) {
 
@@ -72,7 +75,22 @@ var minHtml = function(cb) {
   return result;
 }
 
-var build = gulp.series(minCss, minJs, minHtml);
+var minImages = function(cb) {
+  var result = 
+    gulp.src("src/img/**/*")
+        .pipe(imagemin())
+        .pipe(gulp.dest('dist/img/'))
+  
+  cb();
+  return result;
+}
+
+var fonts = function(cb) {
+  return gulp.src("src/fonts/*")
+            .pipe(gulp.dest("dist/fonts/"));
+}
+
+var build = gulp.series(minCss, minJs, minHtml, minImages, fonts);
 
 exports.build = build;
 exports.default = serve;

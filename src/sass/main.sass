@@ -1,8 +1,37 @@
-body
-  color: #ddb9b9
+@import _reset
 
-p
-  margin: 20px
-  display: block
+html
+  box-sizing: border-box
+
+*
+  box-sizing: inherit
+
+body
+  font-family: Raleway, sans-serif, serif
+  font-weight: 500
+  font-size: 18px
+
+.container
+  width: 1140px
+  margin: 0 auto
+  position: relative
+  z-index: 1
+
+button
+  cursor: pointer
+
+button,input
+  outline: none
+
+a
+  text-decoration: none
+  color: unset
+
+@import _fonts
+@import _variables
+@import _common
 
 @import _header
+@import _service
+@import _portfolio
+

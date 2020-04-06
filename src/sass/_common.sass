@@ -1,0 +1,57 @@
+.section
+  padding-top: 65px
+  padding-bottom: 17px
+  &-title
+    margin-bottom: 85px
+    position: relative
+    font-size: 25px
+    font-weight: 700
+    text-transform: uppercase 
+    text-align: center
+    color: $section-title-color
+    &::after
+      content: ''
+      display: block
+      height: 5px
+      width: 30px
+
+      position: absolute
+      bottom: -14px
+      left: 50%
+      transform: translateX(-50%)
+
+      background-color: $section-title-color
+  
+  &-imaged
+    position: relative // css for proper angles displaying
+    padding-top: 272px
+    padding-bottom: 212px
+    
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: black
+      opacity: 0.6
+
+    .section-title
+      color: $default-content-color
+
+      &::after
+        background-color: $default-content-color
+      
+      
+
+  &-angle
+    fill: $default-content-color
+    position: absolute
+    width: 100%
+    height: 210px
+    &__top
+      top: 0
+    &__bottom
+      bottom: 0
+
