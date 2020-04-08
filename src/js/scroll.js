@@ -1,7 +1,3 @@
-var onWheel = function(e) {
-  console.log(e);
-}
-
 $(document).ready(function() {
 
   $("header a").on('click', function(event) {

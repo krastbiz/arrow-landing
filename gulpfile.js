@@ -86,8 +86,12 @@ var minImages = function(cb) {
 }
 
 var fonts = function(cb) {
-  return gulp.src("src/fonts/*")
-            .pipe(gulp.dest("dist/fonts/"));
+  var result = gulp.src("src/fonts/*")
+                    .pipe(gulp.dest("dist/fonts/"));
+
+  cb();
+
+  return result;
 }
 
 var build = gulp.series(minCss, minJs, minHtml, minImages, fonts);
