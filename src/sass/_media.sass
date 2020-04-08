@@ -1,0 +1,193 @@
+@media (max-width: 1200px)
+  .container
+    width: 1140px
+
+  // COMMON
+  .section
+    &-imaged
+      padding-top: 230px
+    &-angle
+      height: 170px
+
+
+  // PORTFOLIO
+  .portfolio
+    &-items
+      max-width: 920px
+      margin: 0 auto
+      justify-content: center
+
+  // TEAMS
+  .team
+    &-list
+      flex-wrap: wrap
+      flex-basis: 50%
+      justify-content: space-around
+      max-width: 768px
+      margin: 0 auto
+
+@media (max-width: 1140px)
+  .container
+    width: 960px
+
+  // COMMON
+  .section
+    &-angle
+      height: 130px
+
+  // HEADER
+  .header
+    &-content
+      padding: 0px 50px
+      &__text
+        width: auto
+  
+  // PORTFOLIO
+  .portfolio
+    &-item
+      &_hovered
+        padding-top: 0
+        justify-content: center
+      &__link
+        width: 50px
+        height: 50px
+      &__text
+        margin-bottom: 40px
+
+  // TEAM
+  .team
+    &-item
+      margin-bottom: 30px
+      &:nth-last-of-type(-n+2)
+        margin-bottom: 0px
+        
+  // OFFICE
+  .office
+    &-item
+      &-usa
+        left: 270px
+
+@media (max-width: 992px)
+  .container
+    width: 720px
+
+  // HEADER
+  .header
+    &-nav
+      margin-bottom: 150px
+
+  // PORTFOLIO
+  .portfolio
+    &-item
+      width: calc( 100% / 2 )
+
+  // OFFICE
+  .office
+    &-item
+      &-usa
+        left: 160px
+      &-france
+        left: calc( 50% - 20px)
+
+@media (max-width: 768px)
+  .container
+    width: 540px
+
+  // COMMON
+  .section
+    &-angle
+      height: 100px
+    &-imaged
+      padding-top: 130px
+      padding-bottom: 130px
+    &:last-of-type
+      padding-bottom: 30px
+
+  
+
+  //HEADER
+  .header
+    &-nav
+      margin-bottom: 70px
+
+      ul
+        font-size: 15px
+
+    &-content
+      &__button
+        margin-bottom: 140px
+
+  // SERVICE
+  .service
+    &-items
+      flex-direction: column
+      align-items: center
+    
+    &-item
+      margin-bottom: 50px
+      &:last-child
+        margin-bottom: 0
+  
+  // PORTFOLIO
+  .portfolio
+    &-item
+      &__text
+        font-size: 18px
+        margin-bottom: 20px
+
+  [class$="hovered"]
+    display: flex
+
+  // OFFICE
+  .office
+    &-map
+      img
+        max-width: 100%
+
+    &-item
+      &-usa
+        left: 110px
+        top: 30%
+      &-france
+        top: 25%
+      &-egypt
+        left: calc( 50% + 10px)
+
+  // CONTACTS
+  .contacts
+    &-item
+      &__img
+        margin-bottom: 0px
+        img
+          width: 40px
+      &__title
+        font-size: 15px
+      &__subtitle
+        font-size: 10px
+
+@media (max-width: 576px)
+  .container
+    width: auto
+
+  // COMMON
+  .section
+    padding-top: 30px
+    &-angle
+      height: 50px
+    &-imaged
+      padding-top: 70px
+      padding-bottom: 70px
+
+  //HEADER
+  .header
+    &-nav
+      ul
+        font-size: 13px
+        padding-right: 10px
+
+  // TEAM
+  .team
+    &-item
+      margin-bottom: 30px
+      &:nth-last-of-type(2)
+        margin-bottom: 30px

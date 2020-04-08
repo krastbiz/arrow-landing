@@ -59,20 +59,26 @@
       margin-bottom: 228px
       padding: 12px 37px
       background-color: transparent
-      border: 2px solid #fafcfe
+      border: 2px solid $default-content-color
       border-radius: 5px
       font-size: 15px
       font-weight: 700
-      color: #fafcfe
+      color: $default-content-color
+      &:hover
+        background-color: $default-content-color
+        color: $section-title-color
 
     &__scroll
-      display: flex
-      flex-direction: column
-      justify-self: center
-      align-items: center
-      z-index: 1
+      a
+        position: relative
+        display: flex
+        flex-direction: column
+        justify-self: center
+        align-items: center
+        z-index: 1
 
       img
+        position: relative
         height: 40px
         margin-bottom: 10px
 

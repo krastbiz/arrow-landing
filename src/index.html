@@ -4,23 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
+
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
 </head>
 <body>
   
   <!-- header -->
-  <header class="header-section">
+  <header class="header-section" id="header">
     <div class="container">
       <div class="header-nav">
         <a href="/"><div class="logo header-nav__logo"></div></a>
         <ul>
-          <li><a href="#" class="header-nav__link">Services</a></li>
-          <li><a href="#" class="header-nav__link">Portfolio</a></li>
-          <li><a href="#" class="header-nav__link">Team</a></li>
-          <li><a href="#" class="header-nav__link">Offices</a></li>
-          <li><a href="#" class="header-nav__link">Clients</a></li>
-          <li><a href="#" class="header-nav__link">Contacts</a></li>
+          <li><a href="#service" class="header-nav__link">Services</a></li>
+          <li><a href="#portfolio" class="header-nav__link">Portfolio</a></li>
+          <li><a href="#team" class="header-nav__link">Team</a></li>
+          <li><a href="#offices" class="header-nav__link">Offices</a></li>
+          <li><a href="#clients" class="header-nav__link">Clients</a></li>
+          <li><a href="#contacts" class="header-nav__link">Contacts</a></li>
         </ul>
       </div>
+
       <div class="header-content">
 
         <div class="header-content__arrow">
@@ -37,10 +41,12 @@
         </button>
 
         <div class="header-content__scroll">
-          <img src="img/icons/mouse.png" alt="Mouse">
+          <a href="#service">
+            <img class="mouse-animation" src="img/icons/mouse.png" alt="Mouse">
           <p>
             Scroll down
           </p>
+          </a>
         </div>
       </div>
     </div>
@@ -52,10 +58,10 @@
   </header>
 
   <!-- service -->
-  <section class="section service-section">
+  <section class="section service-section" id="service">
     <div class="container">
 
-      <h1 class="section-title">Our Services</h1>
+      <h1 class="section-title service-title">Our Services</h1>
 
       <div class="service-items">
 
@@ -95,9 +101,9 @@
   </section>
 
   <!-- portfolio -->
-  <section class="section section-imaged portfolio-section">
+  <section class="section section-imaged portfolio-section" id="portfolio">
     <div class="container">
-      <h1 class="section-title">Our portfolio</h1>
+      <h1 class="section-title portfolio-title">Our portfolio</h1>
       <div class="portfolio-items">
 
         <div class="portfolio-item">
@@ -160,5 +166,318 @@
     </svg>
   </section>
 
+  <!-- our team -->
+  <section class="section team-section" id="team">
+    <div class="container">
+
+      <h1 class="section-title team-title">Our team</h1>
+      <h2 class="section-subtitle team-subtitle">
+        Lorem Ipsum is simply dummy text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s
+      </h2>
+
+      <div class="team-list">
+
+        <div class="team-item">
+          <div class="team-item__img team-item__img-1">
+            <div class="team-item_hovered">
+              <a href="#" class="team-item__link link-twitter"></a>
+              <a href="#" class="team-item__link link-linkedin"></a>
+              <a href="#" class="team-item__link link-instagram"></a>
+            </div>
+          </div>
+          <div class="team-item__title">Ahmed Yehia Kadry</div>
+          <div class="team-item__subtitle">Developer</div>
+        </div>
+
+        <div class="team-item">
+          <div class="team-item__img team-item__img-2">
+            <div class="team-item_hovered">
+              <a href="#" class="team-item__link link-twitter"></a>
+              <a href="#" class="team-item__link link-linkedin"></a>
+              <a href="#" class="team-item__link link-instagram"></a>
+            </div>
+          </div>
+          <div class="team-item__title">Ahmed Yehia Kotub</div>
+          <div class="team-item__subtitle">Developer</div>
+        </div>
+
+        <div class="team-item">
+          <div class="team-item__img team-item__img-3">
+            <div class="team-item_hovered">
+              <a href="#" class="team-item__link link-twitter"></a>
+              <a href="#" class="team-item__link link-linkedin"></a>
+              <a href="#" class="team-item__link link-instagram"></a>
+            </div>
+          </div>
+          <div class="team-item__title">Farouk Hosni</div>
+          <div class="team-item__subtitle">Developer</div>
+        </div>
+
+        <div class="team-item">
+          <div class="team-item__img team-item__img-4">
+            <div class="team-item_hovered">
+              <a href="#" class="team-item__link link-twitter"></a>
+              <a href="#" class="team-item__link link-linkedin"></a>
+              <a href="#" class="team-item__link link-instagram"></a>
+            </div>
+          </div>
+          <div class="team-item__title">Wahid Magdy</div>
+          <div class="team-item__subtitle">Developer</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- offices -->
+  <section class="section section-imaged office-section" id="offices">
+    <div class="container">
+      <h1 class="section-title office-title">Our Offices</h1>
+      <h2 class="section-subtitle office-subtitle">
+        Lorem Ipsum is simply dummy text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s
+      </h2>
+
+      <div class="office-map">
+        <img src="img/icons/map.png" alt="World map">
+        <div class="office-item office-item-usa">
+          <div class="office-item__marker"></div>
+          <div class="office-item__title">Usa</div>
+        </div>
+        <div class="office-item office-item-france">
+          <div class="office-item__marker"></div>
+          <div class="office-item__title">France</div>
+        </div>
+        <div class="office-item office-item-egypt">
+          <div class="office-item__marker"></div>
+          <div class="office-item__title">Egypt</div>
+        </div>
+      </div>
+
+    </div>
+
+    <svg class="section-angle section-angle__top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <polygon points="0,0 50,100 100,0"></polygon>
+    </svg>
+    <svg class="section-angle section-angle__bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <polygon points="50,100 100,0 100,100"></polygon>
+      <polygon points="0,0 0,100 50,100"></polygon>
+    </svg>
+  </section>
+
+  <!-- our clients -->
+  <section class="section client-section" id="clients">
+    <div class="container">
+      <h1 class="section-title client-title">Our clients</h1>
+      <h2 class="section-subtitle client-subtitle">
+        Lorem Ipsum is simply dummy text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s
+      </h2>
+
+      <div class="client-sliders">
+        <div class="client-slider-outer">
+          <div class="client-slider__top">
+            <div class="client-slider__top-item" style="background: url('img/images/logo-google.png') no-repeat center; height: 45px;"></div>
+            <div class="client-slider__top-item" style="background: url('img/images/logo-booking.png') no-repeat center;  height: 45px;"></div>
+            <div class="client-slider__top-item" style="background: url('img/images/logo-dropbox.png') no-repeat center;  height: 45px;"></div>
+            <div class="client-slider__top-item" style="background: url('img/images/logo-facebook.png') no-repeat center;  height: 45px;"></div>
+            <div class="client-slider__top-item" style="background: url('img/images/logo-groupon.png') no-repeat center;  height: 45px;"></div>
+            <div class="client-slider__top-item" style="background: url('img/images/logo-paypal.png') no-repeat center;  height: 45px;"></div>
+            <div class="client-slider__top-item" style="background: url('img/images/logo-facebook.png') no-repeat center;  height: 45px;"></div>
+          </div>
+          <div class="client-slider__marker"></div>
+        </div>
+
+        <div class="client-slider__bottom">
+
+          <div class="client-slider__item">
+            <div class="slider-item__text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+              has been the industry's standard dummy text ever since the 1500s, when an unknown
+              printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+            </div>
+            <div class="slider-item__subtext"><span class="text-important">Mark Zukerberg</span>, Google.com</div>
+          </div>
+
+          <div class="client-slider__item">
+            <div class="slider-item__text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+              has been the industry's standard dummy text ever since the 1500s, when an unknown
+              printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+            </div>
+            <div class="slider-item__subtext"><span class="text-important">Mark Zukerberg</span>, Booking.com</div>
+          </div>
+
+          <div class="client-slider__item">
+            <div class="slider-item__text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+              has been the industry's standard dummy text ever since the 1500s, when an unknown
+              printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+            </div>
+            <div class="slider-item__subtext"><span class="text-important">Mark Zukerberg</span>, Dropbox.com</div>
+          </div>
+
+          <div class="client-slider__item">
+            <div class="slider-item-container">
+              <div class="slider-item__text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+              </div>
+              <div class="slider-item__subtext"><span class="text-important">Mark Zukerberg</span>, Facebook.com</div>
+            </div>
+          </div>
+
+          <div class="client-slider__item">
+            <div class="slider-item__text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+              has been the industry's standard dummy text ever since the 1500s, when an unknown
+              printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+            </div>
+            <div class="slider-item__subtext"><span class="text-important">Mark Zukerberg</span>, Groupon.com</div>
+          </div>
+
+          <div class="client-slider__item">
+            <div class="slider-item__text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+              has been the industry's standard dummy text ever since the 1500s, when an unknown
+              printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+            </div>
+            <div class="slider-item__subtext"><span class="text-important">Mark Zukerberg</span>, Paypal.com</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- contacts -->
+  <section class="section section-imaged contacts-section" id="contacts">
+    <div class="container">
+      <h1 class="section-title contacts-title">CONTACT US</h1>
+      <h2 class="section-subtitle contacts-subtitle">
+        Lorem Ipsum is simply dummy text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s
+      </h2>
+
+      <div class="contacts-list">
+        <div class="contacts-item">
+          <div class="contacts-item__img">
+            <img src="img/icons/phone.png" alt="Phone icon">
+          </div>
+          <div class="contacts-item__title">Customer Care</div>
+          <div class="contacts-item__subtitle"><a href="tel:+00123456789">(+00) 123456789</a></div>
+        </div>
+        <div class="contacts-item">
+          <div class="contacts-item__img">
+            <img src="img/icons/mail.png" alt="Mail icon">
+          </div>
+          <div class="contacts-item__title">E-Mail</div>
+          <div class="contacts-item__subtitle"><a href="mailto:Hello@Arrowagency.com">Hello@Arrowagency.com</a></div>
+        </div>
+        <div class="contacts-item">
+          <div class="contacts-item__img">
+            <img src="img/icons/twitter-white.png" alt="Twitter icon">
+          </div>
+          <div class="contacts-item__title">Twitter</div>
+          <div class="contacts-item__subtitle"><a href="https://twitter.com/ArrowAgency" target="_blank">@ArrowAgency</a></div>
+        </div>
+        <div class="contacts-item">
+          <div class="contacts-item__img">
+            <img src="img/icons/facebook-white.png" alt="Facebook icon">
+          </div>
+          <div class="contacts-item__title">Facebook</div>
+          <div class="contacts-item__subtitle"><a href="https://www.facebook.com/ArrowAgency" target="_blank">ArrowAgency</a></div>
+        </div>
+      </div>
+
+      <div class="contacts-rights">
+        All Rights Reserved 2015 - Arrow Agency
+      </div>
+    </div>
+
+    <svg class="section-angle section-angle__top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <polygon points="0,0 50,100 100,0"></polygon>
+    </svg>
+  </section>
+
+
+
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="slick/slick.min.js"></script>
+  <script>
+    $(document).ready(function() {
+
+      $('.client-slider__top').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        infinite: true,
+        initialSlide: 3,
+        asNavFor: ".client-slider__bottom",
+        arrows: false,
+        responsive: [
+        {
+          breakpoint: 1140,
+          settings: {
+            slidesToShow: 5,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+          }
+        },
+        {
+          breakpoint: 576,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+          }
+        },
+        
+        ]
+      });
+
+      $('.client-slider__bottom').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        initialSlide: 3,
+        prevArrow: "<div class='client-slider-arrow client-slider-arrow__left'></div>",
+				nextArrow: "<div class='client-slider-arrow client-slider-arrow__right'></div>",
+        asNavFor: ".client-slider__top",
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false
+            }
+          }
+        ]
+      });
+
+    });
+  </script>
 </body>
 </html>

@@ -16,7 +16,6 @@ var sassTask = gulp.series(function(cb) {
   var res = 
     gulp.src("src/sass/*.sass")
         .pipe(sass().on('error', sass.logError))
-        .pipe(autoprefixer())
         .pipe(concatCss('styles.css'))
         .pipe(gulp.dest("src/css"))
         .pipe(bs.stream());
@@ -45,6 +44,7 @@ var minCss = function(cb) {
   var result = 
     gulp.src("src/css/*.css")
         .pipe(rename({suffix: '.min'}))
+        .pipe(autoprefixer())
         .pipe(cleanCss())
         .pipe(gulp.dest("dist/css"));
 

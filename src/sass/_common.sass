@@ -2,7 +2,7 @@
   padding-top: 65px
   padding-bottom: 17px
   &-title
-    margin-bottom: 85px
+    margin-bottom: 45px
     position: relative
     font-size: 25px
     font-weight: 700
@@ -21,6 +21,12 @@
       transform: translateX(-50%)
 
       background-color: $section-title-color
+  &-subtitle
+    max-width: 360px
+    margin: 0 auto
+    font-size: 13px
+    text-align: center
+    color: $section-content-defaultColor
   
   &-imaged
     position: relative // css for proper angles displaying
@@ -41,9 +47,9 @@
       color: $default-content-color
 
       &::after
-        background-color: $default-content-color
-      
-      
+        background-color: $default-content-color  
+    .section-subtitle
+      color: $default-content-color
 
   &-angle
     fill: $default-content-color
@@ -55,3 +61,33 @@
     &__bottom
       bottom: 0
 
+.link
+  &-twitter
+    background: url(../img/icons/twitter.png) no-repeat center
+    background-size: 30px 24px
+
+  &-linkedin
+    background: url(../img/icons/linkedin.png) no-repeat center
+    background-size: 30px
+  
+  &-instagram
+    background: url(../img/icons/instagram.png) no-repeat center
+    background-size: 30px
+
+
+// SLIDER
+
+.slider
+  &-item
+    &__text
+      margin-bottom: 32px
+      color: $section-content-defaultColor
+
+    &__subtext
+      color: $section-content-defaultColor
+      font-weight: 700
+
+.text
+  &-important
+    color: $section-title-color
+    font-weight: 700

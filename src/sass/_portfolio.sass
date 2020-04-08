@@ -3,16 +3,20 @@
     background: url(../img/images/hero-02.jpg) no-repeat center
     background-size: cover
   
+  &-title
+    margin-bottom: 84px
+
   &-items
     display: flex
     flex-wrap: wrap
   &-item
     position: relative
-    min-width: calc( 100% / 3 )
+    width: calc( 100% / 3 )
     &__img
       display: block
       max-height: 100%
       max-width: 100%
+
     &_hovered
       display: none
       flex-direction: column
@@ -28,6 +32,7 @@
     &:hover
       .portfolio-item_hovered
         display: flex
+
 
     &__text
       margin-bottom: 39px
